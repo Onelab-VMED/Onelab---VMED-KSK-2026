@@ -642,7 +642,107 @@
   .success-detail:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   .success-detail strong { color: var(--green-dark); }
 
-  /* ── ERROR ── */
+  /* ── SUCCESS SECTIONS ── */
+  .success-sections { max-width: 480px; margin: 24px auto 0; text-align: left; }
+  .success-section {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(27,107,58,0.07);
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .success-section-header {
+    background: var(--green-dark);
+    color: white;
+    padding: 12px 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .success-section-body { padding: 16px; }
+  .luu-y-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: var(--gray-600);
+    line-height: 1.55;
+  }
+  .luu-y-item:last-child { margin-bottom: 0; }
+  .luu-y-num {
+    width: 22px; height: 22px;
+    background: var(--green-dark);
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .uu-dai-item {
+    border: 1px solid rgba(27,107,58,0.15);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    background: var(--green-pale);
+  }
+  .uu-dai-item:last-child { margin-bottom: 0; }
+  .uu-dai-name {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .uu-dai-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+  }
+  .uu-dai-old {
+    font-size: 12px;
+    color: var(--gray-400);
+    text-decoration: line-through;
+  }
+  .uu-dai-new {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green-dark);
+  }
+  .uu-dai-badge {
+    background: #E53935;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+  }
+  .uu-dai-note {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-top: 4px;
+  }
+  .hotline-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--green-dark);
+    color: white;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 12px;
+  }
   .error-msg {
     font-size: 12px;
     color: var(--red);
@@ -725,7 +825,7 @@
   <div class="hero-text">
     <div class="hero-label">✦ Chương trình sức khỏe doanh nghiệp 2026</div>
     <div class="hero-title">Đăng ký Khám Sức Khỏe<br><span>VMED Group 2026</span></div>
-    <div class="hero-desc">ONELAB trân trọng đồng hành cùng toàn thể CBNV VMED Group — vì một đội ngũ khỏe mạnh & vững mạnh.</div>
+    <div class="hero-desc">ONELAB trân trọng đồng hành cùng đại gia đình VMED Group — vì một đội ngũ khỏe mạnh & vững mạnh.</div>
     <div class="hero-info-row">
       <div class="hero-info-chip">📍 Hồ Chí Minh</div>
       <div class="hero-info-chip">🧪 Lấy mẫu: <strong>07–08/07</strong></div>
@@ -799,7 +899,7 @@
     <div class="card">
       <div class="notice">
         <span class="notice-icon">⏰</span>
-        <span>Thời gian lấy mẫu từ <strong>7:00 – 10:00 sáng</strong>. Nhịn ăn ít nhất <strong>8 tiếng</strong> trước giờ lấy mẫu, chỉ uống nước lọc. Mang theo CCCD khi đến.</span>
+        <span>Thời gian lấy mẫu từ <strong>7:00 – 10:00 sáng</strong>. Nhịn ăn ít nhất <strong>8 tiếng</strong> trước giờ lấy mẫu, chỉ uống nước lọc.</span>
       </div>
 
       <!-- Day tabs -->
@@ -886,7 +986,9 @@
       <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
     </div>
     <div class="success-title">Đăng ký thành công!</div>
-    <div class="success-desc">Thông tin của bạn đã được ghi nhận. Vui lòng chụp màn hình trang này và mang theo CCCD khi đến.</div>
+    <div class="success-desc">Thông tin của bạn đã được ghi nhận. Cảm ơn bạn đã lựa chọn chúng tôi — ONELAB hân hạnh được đồng hành cùng hành trình sức khỏe dài lâu dựa trên sự thấu hiểu sâu sắc.</div>
+
+    <!-- XÁC NHẬN -->
     <div class="success-card">
       <div class="success-card-title">📋 Xác nhận đăng ký của bạn</div>
       <div class="success-detail"><span>Họ tên</span><strong id="sc-name">—</strong></div>
@@ -894,6 +996,96 @@
       <div class="success-detail"><span>Đơn vị</span><strong id="sc-company">—</strong></div>
       <div class="success-detail"><span>Lấy mẫu</span><strong id="sc-sample">—</strong></div>
       <div class="success-detail"><span>Khám tổng quát</span><strong id="sc-exam">—</strong></div>
+    </div>
+
+    <div class="success-sections">
+
+      <!-- LƯU Ý TRƯỚC KHI LẤY MẪU -->
+      <div class="success-section">
+        <div class="success-section-header">⚠️ Lưu ý trước khi lấy mẫu</div>
+        <div class="success-section-body">
+          <div class="luu-y-item"><div class="luu-y-num">1</div><span><strong>Nhịn ăn 8–10 tiếng</strong> trước khi lấy mẫu, đặc biệt các xét nghiệm đường huyết và mỡ máu. Vẫn có thể uống nước lọc.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">2</div><span><strong>Thời điểm tốt nhất</strong> là buổi sáng lúc đói — nồng độ các chất trong máu phản ánh trung thực nhất.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">3</div><span><strong>Giữ tâm lý thoải mái</strong> — lo lắng, căng thẳng có thể ảnh hưởng đến huyết áp, đường huyết và cortisol.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">4</div><span><strong>Tránh vận động gắng sức</strong> trước khi lấy máu.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">5</div><span><strong>Tham khảo ý kiến bác sĩ</strong> nếu đang dùng thuốc hoặc thực phẩm chức năng trước khi xét nghiệm.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">6</div><span><strong>Phụ nữ</strong> nên tránh lấy máu và nước tiểu trong những ngày hành kinh.</span></div>
+        </div>
+      </div>
+
+      <!-- LƯU Ý SAU KHI LẤY MẪU -->
+      <div class="success-section">
+        <div class="success-section-header">✅ Lưu ý sau khi lấy mẫu</div>
+        <div class="success-section-body">
+          <div class="luu-y-item"><div class="luu-y-num">1</div><span><strong>Giữ băng dán</strong> tại vị trí lấy máu tối thiểu 15–30 phút để hạn chế chảy máu hoặc bầm tím.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">2</div><span><strong>Uống đủ nước</strong> và nghỉ ngơi hợp lý sau khi lấy mẫu.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">3</div><span><strong>Tránh mang vác vật nặng</strong> hoặc vận động mạnh bằng tay vừa lấy máu trong vài giờ đầu.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">4</div><span>Nếu xuất hiện <strong>bầm tím nhẹ</strong> tại vị trí lấy máu — đây là phản ứng thường gặp và sẽ tự cải thiện sau vài ngày.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">5</div><span>Nếu <strong>chảy máu kéo dài, sưng đau nhiều</strong> hoặc có dấu hiệu bất thường — liên hệ ONELAB hoặc cơ sở y tế gần nhất.</span></div>
+          <div class="luu-y-item"><div class="luu-y-num">6</div><span><strong>Theo dõi thời gian trả kết quả</strong> và liên hệ ONELAB nếu cần giải đáp thêm.</span></div>
+        </div>
+      </div>
+
+      <!-- ƯU ĐÃI ĐẶC QUYỀN -->
+      <div class="success-section">
+        <div class="success-section-header">🎁 Ưu đãi đặc quyền dành riêng cho Đại gia đình VMED</div>
+        <div class="success-section-body">
+          <p style="font-size:12px;color:var(--gray-400);margin-bottom:12px;">Giảm 10% toàn bộ dịch vụ xét nghiệm tại ONELAB — áp dụng cho CBNV VMED và người thân.</p>
+
+          <div class="uu-dai-item">
+            <div class="uu-dai-name">🦠 Gói tầm soát STI & bệnh lây truyền</div>
+            <div class="uu-dai-note">HIV, Syphilis, STI 13 tác nhân, Viêm gan B/C...</div>
+            <div class="uu-dai-price">
+              <span class="uu-dai-old">1,508,000đ</span>
+              <span class="uu-dai-new">1,357,200đ</span>
+              <span class="uu-dai-badge">-10%</span>
+            </div>
+          </div>
+
+          <div class="uu-dai-item">
+            <div class="uu-dai-name">🪱 Gói ký sinh trùng cơ bản</div>
+            <div class="uu-dai-note">Cysticercosis, Echinococcus, Toxoplasma...</div>
+            <div class="uu-dai-price">
+              <span class="uu-dai-old">1,003,000đ</span>
+              <span class="uu-dai-new">902,700đ</span>
+              <span class="uu-dai-badge">-10%</span>
+            </div>
+          </div>
+
+          <div class="uu-dai-item">
+            <div class="uu-dai-name">🔬 Gói HPV & sức khỏe phụ khoa</div>
+            <div class="uu-dai-note">HPV 16 genotype, HPV 40 type, Pap smear...</div>
+            <div class="uu-dai-price">
+              <span class="uu-dai-old">1,313,000đ</span>
+              <span class="uu-dai-new">1,181,700đ</span>
+              <span class="uu-dai-badge">-10%</span>
+            </div>
+          </div>
+
+          <div class="uu-dai-item">
+            <div class="uu-dai-name">🎗️ Gói tầm soát ung thư OnePlus Onco</div>
+            <div class="uu-dai-note">Tầm soát đa ung thư chuyên sâu</div>
+            <div class="uu-dai-price">
+              <span class="uu-dai-old">13,200,000đ</span>
+              <span class="uu-dai-new">11,220,000đ</span>
+              <span class="uu-dai-badge">-15%</span>
+            </div>
+          </div>
+
+          <div class="uu-dai-item">
+            <div class="uu-dai-name">🧬 Gói tầm soát ung thư OneScan Onco</div>
+            <div class="uu-dai-note">Gói tầm soát ung thư toàn diện cao cấp</div>
+            <div class="uu-dai-price">
+              <span class="uu-dai-old">17,890,000đ</span>
+              <span class="uu-dai-new">15,206,500đ</span>
+              <span class="uu-dai-badge">-15%</span>
+            </div>
+          </div>
+
+          <a href="tel:19002555 99" class="hotline-btn">📞 Đặt lịch ưu đãi: 1900 25 55 99</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -909,7 +1101,7 @@
 
 <script>
 // ── CONFIG ──────────────────────────────────────────────────────────────────
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzgrLvEiPmN4rd6QZirSvcCgKavbCMaDbQ4Vqf0Iyd2jn5viegY_OBQLtfpvRPmIlUw/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz1fbJ3onjr5wEJsk2JA1ScocQyI3-N1bbCG_L1NQLWn3Zkzv1XjlwAX0SgWo_ArDvC/exec';
 
 const SLOTS = [
   { id: 's1', time: '7:00 – 7:30' },
